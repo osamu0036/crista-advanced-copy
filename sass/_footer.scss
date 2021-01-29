@@ -1,0 +1,15 @@
+.footer {
+  width: 100%;
+  max-width: 1440px;
+  height: 50px;
+  margin: 0 auto;
+  background-color: #525252;
+  text-align: center;
+}
+.footer-small {
+  @include font-size(10);
+  line-height: 50px;
+  color: $color-white;
+  letter-spacing: 0.15px;
+  font-family: 'Montserrat Medium';
+}

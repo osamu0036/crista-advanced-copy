@@ -1,0 +1,315 @@
+/* ------------------------- */
+/* contact.html */
+/* ------------------------- */
+.lower-contact-inner {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.lower-img-box__contact {
+  background-image: url(../img/Medium_heading-img_contact@2x.png);
+}
+.lower-txt-box-c {
+  position: absolute;
+  // position: relative;
+  top: 161px;
+  right: 108px;
+}
+.contact-lead-box__mbl {
+  margin-bottom: 55px;
+}
+.contact-lead__contactPage {
+  @include font-size(16);
+  line-height: 24px;
+  font-family: 'Noto Sans JP';
+  letter-spacing: 0.06px;
+  font-weight: normal;
+}
+.form-item {
+  margin-bottom: 45px;
+}
+.form-label {
+  @include font-size(16);
+  font-family: 'Noto Sans JP Bold';
+  letter-spacing: 0.06px;
+  font-weight: normal;
+  margin-bottom: 10px;
+  &__mbl {
+    margin-bottom: 25px;
+  }
+}
+.radio-form {
+  margin-bottom: 3.6px;
+}
+.radio-label {
+  margin-right: 50px;
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+.input-form {
+  width: 100%;
+  height: 41px;
+  border: 1px solid #333333;
+  padding: 5px;
+  margin-top: 10px;
+}
+.textarea-form {
+  width: 100%;
+  height: 212px;
+  border: 1px solid #333333;
+  padding: 5px;
+  margin-top: 10px;
+}
+.privacy-ttl-box {
+  padding-bottom: 10px;
+}
+.privacy-ttl {
+  @include font-size(16);
+  letter-spacing: 0.06px;
+  font-weight: normal;
+  color: #272727;
+  font-family: 'Montserrat ExtraBold';
+}
+.privacy-txt-box {
+  width: 700px;
+  height: 252px;
+  border: 1px solid #333333;
+  background-color: #fff;
+  overflow-y: scroll;
+  padding: 10px 10px 0;
+  margin-bottom: 45px;
+}
+.privacy-checkbox {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 43px;
+}
+.privacy-check {
+  width: 20px;
+  height: 20px;
+  margin-bottom: 3px;
+  margin-right: 10px;
+}
+.privacy-check-txt {
+  @include font-size(16);
+  letter-spacing: 0.06px;
+  font-weight: normal;
+  font-family: 'Noto Sans JP';
+}
+.contact-btn-box {
+  margin-bottom: 120px;
+  text-align: center;
+}
+.form-txt-label {
+  display: inline-block;
+  padding: 3px 5px;
+  @include font-size(12);
+  line-height: 16px;
+  font-family: 'Noto Sans JP Bold';
+  letter-spacing: 0.05px;
+  color: $color-white;
+  background-color: #000000;
+  margin-left: 10px;
+}
+.one-point-txt-contact {
+  opacity: 0;
+}
+/* ------------------------- */
+/* contact.html-mq */
+/* ------------------------- */
+@include mq(767) {
+  .lower-img-box__contact {
+    background-image: url(../img/マスクグループ13@2x.png);
+    &::before {
+      content: '';
+      background-color: rgba(0, 0, 0, 0.5);
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 1;
+    }
+  }
+}
+@include mq(768) {
+  .site-ttl svg {
+    width: 189px;
+  }
+  .sec-wrapper__contact {
+    padding: 0 6.5vw;
+  }
+  .lower-mv__mbl {
+    margin-bottom: 135px;
+  }
+  .lower-img-box__contact {
+    background-position: 50%;
+    width: 75.2604%;
+  }
+  .lower-txt-box-c {
+    width: 288px;
+    position: absolute;
+    top: 132px;
+    right: 48px;
+  }
+  .lower-txt-en {
+    width: 288px;
+  }
+
+  .contact-lead__contactPage {
+    width: 96.2%;
+    margin-bottom: 21px;
+  }
+  .contact-lead-box__mbl {
+    margin-bottom: 0;
+  }
+  .form-item {
+    margin-bottom: 38px;
+  }
+  .input-form,
+  .textarea-form,
+  .privacy-txt-box {
+    width: 97.2%;
+  }
+  .privacy-txt-box {
+    margin-bottom: 40px;
+  }
+  .privacy-checkbox {
+    margin-bottom: 40px;
+  }
+  .contact-btn-box {
+    margin-bottom: 147px;
+  }
+}
+/* ------------------------- */
+/* contact.html-sp */
+/* ------------------------- */
+@include mq(430) {
+  .lower-txt-box-c {
+    position: relative;
+    position: absolute;
+    top: 117px;
+    right: 20px;
+  }
+}
+@include mq(375) {
+  .sec-wrapper__contact {
+    padding: 0 4vw;
+  }
+  .mv.lower-mv.lower-mv__mbl {
+    height: 365px;
+    margin-bottom: 80px;
+  }
+  .lower-img-box__contact {
+    width: 287px;
+    height: 270px;
+    background-image: url(../img/マスクグループ13@2x.png);
+    &::before {
+      content: '';
+      background-color: rgba(0, 0, 0, 0.3);
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 1;
+    }
+  }
+  .lower-body__right.lower-body__right-contact {
+    width: 198px;
+    height: 365px;
+  }
+  .lower-txt-box-c {
+    position: absolute;
+    top: 117px;
+    right: 45px;
+    text-align: right;
+  }
+  .lower-ttl-en {
+    letter-spacing: 3.28px;
+  }
+  .contact-lead__contactPage {
+    @include font-size(14);
+    line-height: 24px;
+    font-family: 'YuGothic';
+    letter-spacing: 0.06px;
+  }
+  .contact-lead.contact-lead__contactPage {
+    width: 100%;
+    margin-bottom: 51px;
+  }
+  .form-label {
+    font-family: 'YuGothic';
+    font-weight: bold;
+  }
+  .radio-label {
+    margin-right: 0;
+    @include font-size(16);
+    font-family: 'YuGothic';
+  }
+  .hori {
+    margin-bottom: 11px;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+  .radio-form {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  .privacy-txt {
+    @include font-size(14);
+  }
+  .privacy-check {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    margin-top: 3px;
+  }
+  .privacy-checkbox .privacy-check-txt {
+    @include font-size(14);
+    letter-spacing: 0.06px;
+  }
+  .privacy-checkbox {
+    text-align: left;
+    display: flex;
+  }
+  .contact-btn-box.btn__c {
+    margin-bottom: 80px;
+  }
+  .one-point-txt-contact {
+    display: inline-block;
+    position: absolute;
+    top: 318px;
+    left: -4px;
+    @include font-size(12);
+    line-height: 32px;
+    letter-spacing: 0.46px;
+    color: $color-black;
+    font-family: 'Montserrat ExtraBold';
+    transform: rotate(270deg);
+    opacity: 1;
+    &::after {
+      position: absolute;
+      top: 15px;
+      left: 90px;
+      display: inline-block;
+      content: '';
+      width: 80px;
+      height: 1px;
+      background-color: #fff;
+    }
+    &::before {
+      position: absolute;
+      top: 15px;
+      left: 56px;
+      display: inline-block;
+      content: '';
+      width: 36px;
+      height: 1px;
+      background-color: $color-black;
+    }
+  }
+}

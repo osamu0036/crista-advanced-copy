@@ -1,0 +1,53 @@
+@import 'var';
+@import 'mixin';
+
+/* ------------------------- */
+/* base */
+/* ------------------------- */
+html {
+  font-size: 100%;
+  scroll-behavior: smooth;
+}
+main {
+  position: relative;
+  z-index: -1;
+}
+body {
+  position: relative;
+  z-index: -1;
+  width: 100%;
+  color: $color-black;
+  font-family: 'Montserrat', sans-serif;
+  &.is-drawerActive {
+    overflow: hidden;
+  }
+}
+img {
+  width: 100%;
+}
+.sec-wrapper {
+  width: 100%;
+  padding-right: 4vw;
+  padding-left: 4vw;
+}
+.sec-ttl-box {
+  margin: 30px 0;
+}
+.sec-ttl {
+  letter-spacing: 2.18px;
+  @include font-size(32);
+  line-height: 32px;
+  font-family: 'Montserrat ExtraBold';
+  text-align: left;
+}
+.sec-inner {
+  max-width: 1100px;
+  height: auto;
+  margin: 0 auto;
+  padding-bottom: 60px;
+}
+@include mq(768) {
+  .sec-inner {
+    padding-bottom: 40px;
+  }
+}
